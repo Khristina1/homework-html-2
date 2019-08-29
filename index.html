@@ -10,21 +10,27 @@
     <body>
         <header>
             <a href="index.html">
-                <img src="image/favicon.jpg" alt="fish" width="40px" height="40px">
+                <img src="image/favicon.jpg" alt="fish" width="40" height="40">
             </a>
-            <a href="index.html">Головна</a>
-            <a href="#catalog">Каталог</a>
-            <a href="#contacts">Контакти</a>
+            <nav>
+            <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li> <a href="#catalog">Каталог</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+            </ul>
+            </nav>
             <label>
                 <input type="search" name="search" placeholder="Пошук">
             </label>
+              <h1>Welcome to Fish store</h1>
         </header>
         <main>
             <a href="index.html">
-                <img src="image/fish.jpg" alt="fish" width="1340px" height="600px">
+                <img src="image/fish.jpg" alt="fish" width="1340" height="600">
             </a>
             <section id="catalog">
-                <h1>Каталог</h1>
+                <h1>Каталог </h1>
+                <a><img src="image/basket.png" alt="basket" width="60" height="45"></a>
                 <table>
                     <tr>
                         <td>
@@ -54,23 +60,23 @@
                         </td>
                         <th>
                             Бичок лицар <br>
-                            <img src="image/steer_knight.jpg" alt="steer knight" width="210px" height="200px">
+                            <img src="image/steer_knight.jpg" alt="steer knight" width="210" height="200">
                         </th>
                         <th>
                             Тернеція червона <br>
-                            <img src="image/red_ternece.jpg" alt="red_ternece" width="210px" height="200px">
+                            <img src="image/red_ternece.jpg" alt="red_ternece" width="210" height="200">
                         </th>
                         <th>
                             Червона шапочка <br>
-                            <img src="image/red_riding_hood.jpg" alt="red_riding_hood" width="210px" height="200px">
+                            <img src="image/red_riding_hood.jpg" alt="red_riding_hood" width="210" height="200">
                         </th>
                         <th>
                             Барбус суматранський зелений<br>
-                            <img src="image/sumatran_green_barb.jpg" alt="sumatran_green_barb" width="210px" height="200px">
+                            <img src="image/sumatran_green_barb.jpg" alt="sumatran_green_barb" width="210" height="200">
                         </th>
                         <th>
                             Вуалехвіст червоний<br>
-                            <img src="image/red_voilevist.jpg" alt="red_voilevist" width="210px" height="200px">
+                            <img src="image/red_voilevist.jpg" alt="red_voilevist" width="210" height="200">
                         </th>
                     </tr>
                     <tr>
@@ -82,7 +88,7 @@
                             Сумісність: мирні<br>
                             Кількість: мало<br>
                             <label>
-                                <input type="numbers" placeholder="1" name="numbers" size="1" max="10">
+                                <input type="number" placeholder="1" name="number" max="10">
                             </label>
                             <label>
                                 <input type="submit" value="Купити">215.00 грн.
@@ -96,7 +102,7 @@
                             Сумісність: мирні<br>
                             Кількість: багато<br>
                             <label>
-                                <input type="numbers" placeholder="1" name="numbers" size="1" max="10">
+                                <input type="number" placeholder="1" name="number" max="10">
                             </label>
                             <label>
                                 <input type="submit" value="Купити">45.00 грн.
@@ -110,7 +116,7 @@
                             Сумісність: мирні<br>
                             Кількість: мало<br>
                             <label>
-                                <input type="numbers" placeholder="1" name="numbers" size="1" max="10">
+                                <input type="number" placeholder="1" name="number"  max="10">
                             </label>
                             <label>
                                 <input type="submit" value="Купити">235.00 грн.
@@ -124,7 +130,7 @@
                             Сумісність: мирні<br>
                             Кількість: багато<br>
                             <label>
-                                <input type="numbers" placeholder="1" name="numbers" size="1" max="10">
+                                <input type="number" placeholder="1" name="number"  max="10">
                             </label>
                             <label>
                                 <input type="submit" value="Купити">23.00 грн.
@@ -138,7 +144,7 @@
                             Сумісність: мирні<br>
                             Кількість: багато<br>
                             <label>
-                                <input type="numbers" placeholder="1" name="numbers" size="1">
+                                <input type="number" placeholder="1" name="number"  max="10">
                             </label>
                             <label>
                                 <input type="submit" value="Купити">53.00 грн.
@@ -152,8 +158,8 @@
         <footer>
             <section id="contacts">
                 <h1>Контакти</h1>
+            <form action="https://formspree.io/sokeyush@gmail.com" method="POST">
                 <table>
-                    <form action="https://formspree.io/sokeyush@gmail.com" method="POST">
                         <tr>
                             <td>
                                 Україна, Львів<br>
@@ -171,17 +177,17 @@
                             <td>
                                 ДОСТАВКА РИБ ПО ВСІЙ УКРАЇНІ<br>
                                 <label>
-                                    Ім'я:* <input type="name" name="name" placeholder="Введіть ваше ім'я" required>
+                                    Ім'я: <input type="text" name="name" placeholder="Введіть ваше ім'я" >
                                 </label>
                                 <br>
                                 <br>
                                 <label>
-                                    Телефон:* <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" max="10" required>
+                                    Телефон:* <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
                                 </label>
                                 <br>
                                 <br>
                                 <label>
-                                    Електронна пошта: <input type="email" name="user-name" placeholder="Email">
+                                    Електронна пошта: <input type="email" name="user-name" placeholder="Email" multiple>
                                 </label>
                                 <br>
                                 <br>
@@ -190,18 +196,18 @@
                                 </label>
                                 <br>
                                 <label>
-                                    Надіслати <input type="submit" value="Надіслати">
+                                    <input type="submit" value="Надіслати">
                                 </label>
                             </td>
                         </tr>
-                    </form>
                 </table>
+            </form>
             </section>
             <a href="#">
-                <img src="image/instagram.jpg" alt="instagram" width="30px" height="30px">
+                <img src="image/instagram.jpg" alt="instagram" width="30" height="30">
             </a>
             <a href="#">
-                <img src="image/facebook.png" alt="facebook" width="30px" height="30px">
+                <img src="image/facebook.png" alt="facebook" width="30" height="30">
             </a>
         </footer>
     </body>
