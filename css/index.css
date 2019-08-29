@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Schoolbell&display=swap');
+:root{
+--font-color:black;
+--font-family:'Schoolbell', cursive;
+--accent-color: #1A1D74;
+}
+body{
+    max-width: 980px;
+    margin:auto;
+}
+
+header .logo{
+    margin: 1rem 0;
+    text-align: left;
+}
+header nav .menu{
+    display:flex;
+    padding:0;
+    list-style-type:none;
+    justify-content: space-around;
+}
+header nav .menu li a{
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    border: 1px solid #2C28D4;
+    padding:16px;
+    font-family:'Schoolbell', cursive;
+}
+header nav .menu li a:hover{
+    border: 3px solid var(--accent-color);
+}
+
+header .banner{
+    background-image: url(../image/fish.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+header .banner h1 a{
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid transparent;
+    padding:10px;
+    }
+header .banner h1 a:hover{
+    border: 5px solid var(--accent-color);
+    border-radius:20px;
+}
+
+@media(min-width: 600px){
+
+header .nav{
+    display: flex;
+align-items: center;
+}
+header nav .menu{
+    flex:1;
+}
+
+}
