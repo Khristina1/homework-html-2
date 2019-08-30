@@ -8,7 +8,18 @@ body{
     max-width: 980px;
     margin:auto;
 }
-
+.text{
+    font-family:'Schoolbell', cursive;
+   text-decoration:none;
+    text-transform: uppercase;
+    color: var(--font-color);
+    font-size:2rem;
+}
+.search{
+    display:flex;
+    padding:0;
+    justify-content:flex-end;
+}
 header .logo{
     margin: 1rem 0;
     text-align: left;
