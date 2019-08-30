@@ -20,15 +20,13 @@ body{
     padding:0;
     justify-content:flex-end;
 }
-header .logo{
-    margin: 1rem 0;
-    text-align: left;
-}
 header nav .menu{
     display:flex;
     padding:0;
     list-style-type:none;
     justify-content: space-around;
+    flex-wrap:wrap;
+     flex-direction:column;
 }
 header nav .menu li a{
     text-decoration: none;
@@ -73,6 +71,8 @@ align-items: center;
 }
 header nav .menu{
     flex:1;
+    flex-direction:row;
+
 }
 
 }
