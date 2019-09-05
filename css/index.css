@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
 :root{
 --font-color:black;
 --font-family:'Schoolbell', cursive;
 --accent-color: #1A1D74;
+ scroll-behavior: smooth;
 }
 body{
     max-width: 980px;
@@ -15,9 +17,15 @@ body{
     color: var(--font-color);
     font-size:2rem;
 }
-header nav .menu .search{
-}
+header nav .search{
+    display: flex;
+  padding: 0;
+ border: 1px solid transparent;
 
+}
+header nav .search:hover{
+       border: 0px solid #165BBD;
+}
 header nav .menu{
     display:flex;
     padding:0;
@@ -26,20 +34,18 @@ header nav .menu{
     flex-wrap:wrap;
     height: 220px;
      flex-direction:column;
-
 }
 header nav .menu li a{
     text-decoration: none;
     color: var(--font-color);
     text-transform: uppercase;
-    border: 1px solid #2C28D4;
+    border: 1px solid transparent;
     padding:16px;
     font-family:'Schoolbell', cursive;
 }
 header nav .menu li a:hover{
-    border: 3px solid var(--accent-color);
+    border: 1px solid #165BBD;
 }
-
 header .banner{
     background-image: url(../image/fish.jpg);
     background-position: center;
@@ -62,9 +68,33 @@ header .banner h1 a:hover{
     border: 5px solid var(--accent-color);
     border-radius:20px;
 }
-
+main #catalog h1{
+    font-family: var(--font-family);
+}
+main .basket{
+justify-content:flex-end;
+}
+main #catalog .catagory{
+    background-image: linear-gradient(to right top, #93bfd6, #52a5dc, #0087e1, #0064dd, #4336cb);
+     font-family: var(--font-family);
+    display:flex;
+    padding:0;
+    list-style-type:none;
+    flex-direction: column;
+}
+main #catalog .catagory li a{
+    font-family: var(--font-family);
+    text-decoration:none;
+   color: var(--font-color);
+   list-style-type:none;
+}
+main #catalog .catagories .fish{
+    border: 1px solid transparent;
+}
+main #catalog .catagories .fish:hover{
+    border: 1px solid #2274CE;
+}
 @media(min-width: 600px){
-
 header .nav{
     display: flex;
 align-items: center;
@@ -73,7 +103,31 @@ header nav .menu{
     flex:1;
     flex-direction:row;
     height: auto;
-
 }
+main .fish image{
+    width:100%;
+display:block;
+}
+main .product .product-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+}
+@media (min-width: 400px){
+    main .catagories{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:5px;
 
+    }
+}
+@media (min-width:650px){
+    main .catagories{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media (min-width: 980px){
+    main .catagories{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

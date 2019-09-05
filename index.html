@@ -7,6 +7,7 @@
         <title>Fish Store</title>
       <link rel="stylesheet" href="css/index.css">
       <link rel="icon" type="image.png" href="image/favicon.ico">
+
     </head>
     <body>
         <header>
@@ -19,11 +20,10 @@
             <li ><a  href="#catalog">Каталог</a></li>
             <li ><a href="#contacts">Контакти</a></li>
              <label class="search">
-                <input type="text" name="search" placeholder="Пошук">
+                <input type="text" class="search" name="search" placeholder="Пошук">
                 </label>
             </ul>
             </nav>
-            <br>
             <div class="banner">
              <h1><a href="index.html" > Welcome to Fish store</a></h1>
               </div>
@@ -31,130 +31,109 @@
         <main>
             <section id="catalog">
                 <h1>Каталог</h1>
-                <a><img src="image/basket.png" alt="basket" width="60" height="45"></a>
-                <table>
-                    <tr>
-                        <td>
-                            Категорії: <br>
-                            <a href="#">Сяючі рибки</a>
-                            <br>
-                            <a href="#">Золоті рибки</a>
-                            <br>
-                            <a href="#">Карпи</a>
-                            <br>
-                            <a href="#">Соми</a>
-                            <br>
-                            <a href="#">Скалярії</a>
-                            <br>
-                            <a href="#">Ексклюзивні</a>
-                            <br>
-                            <a href="#">Равлики</a>
-                            <br>
-                            <a href="#">Креветки</a>
-                            <br>
-                            <a href="#">Жаби</a>
-                            <br>
-                            <a href="#">Черепахи</a>
-                            <br>
-                            <a href="#">Чистильники</a>
-                            <br>
-                        </td>
-                        <th>
-                            Бичок лицар <br>
-                            <img src="image/steer_knight.jpg" alt="steer knight" width="210" height="200">
-                        </th>
-                        <th>
-                            Тернеція червона <br>
-                            <img src="image/red_ternece.jpg" alt="red_ternece" width="210" height="200">
-                        </th>
-                        <th>
-                            Червона шапочка <br>
-                            <img src="image/red_riding_hood.jpg" alt="red_riding_hood" width="210" height="200">
-                        </th>
-                        <th>
-                            Барбус суматранський зелений<br>
-                            <img src="image/sumatran_green_barb.jpg" alt="sumatran_green_barb" width="210" height="200">
-                        </th>
-                        <th>
-                            Вуалехвіст червоний<br>
-                            <img src="image/red_voilevist.jpg" alt="red_voilevist" width="210" height="200">
-                        </th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            Латинь: Stigmatogobius <br>
-                            sadanundio<br>
-                            Розмір, см: 4-5<br>
-                            Сумісність: мирні<br>
-                            Кількість: мало<br>
-                            <label>
-                                <input type="number" placeholder="1" name="number" max="10">
-                            </label>
-                            <label>
-                                <input type="submit" value="Купити">215.00 грн.
-
-                            </label>
-                        </td>
-                        <td>
-                            Латинь: Gymnocorymbus ternetzi<br>
-                            GLOFISH<br>
-                            Розмір, см: 2-3<br>
-                            Сумісність: мирні<br>
-                            Кількість: багато<br>
-                            <label>
-                                <input type="number" placeholder="1" name="number" max="10">
-                            </label>
-                            <label>
-                                <input type="submit" value="Купити">45.00 грн.
-
-                            </label>
-                        </td>
-                        <td>
-                            Латинь: Tancho<br>
-                            оranda<br>
-                            Розмір, см: 5-6<br>
-                            Сумісність: мирні<br>
-                            Кількість: мало<br>
-                            <label>
-                                <input type="number" placeholder="1" name="number"  max="10">
-                            </label>
-                            <label>
-                                <input type="submit" value="Купити">235.00 грн.
-
-                            </label>
-                        </td>
-                        <td>
-                            Латинь: Barbus tetrazona<br>
-                            GLOFISH<br>
-                            Розмір, см: 2-3<br>
-                            Сумісність: мирні<br>
-                            Кількість: багато<br>
-                            <label>
-                                <input type="number" placeholder="1" name="number"  max="10">
-                            </label>
-                            <label>
-                                <input type="submit" value="Купити">23.00 грн.
-
-                            </label>
-                        </td>
-                        <td>
-                            Латинь: Carassius<br>
-                            auratus<br>
-                            Розмір, см: 2-3<br>
-                            Сумісність: мирні<br>
-                            Кількість: багато<br>
-                            <label>
-                                <input type="number" placeholder="1" name="number"  max="10">
-                            </label>
-                            <label>
-                                <input type="submit" value="Купити">53.00 грн.
-
-                            </label>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+                <a class="basket"><img src="image/basket.png" alt="basket" width="60" height="45"></a>
+            <div class="catagories">
+        <ul class="catagory">
+            <h2> Категорії:</h2>
+   <li><a href="#">Сяючі рибки</a></li>
+   <li><a href="#">Золоті рибки</a></li>
+  <li><a href="#">Карпи</a></li>
+  <li><a href="#">Соми</a></li>
+  <li><a href="#">Скалярії</a></li>
+  <li><a href="#">Ексклюзивні</a></li>
+  <li><a href="#">Равлики</a></li>
+  <li><a href="#">Креветки</a></li>
+  <li><a href="#">Жаби</a></li>
+  <li><a href="#">Черепахи</a></li>
+  <li><a href="#">Чистильники</a></li>
+        </ul>
+            <article class="fish">
+<h4> Бичок лицар</h4>
+<img src="image/steer_knight.jpg" alt="steer knight" width="210" height="200" >
+<p>Латинь: Guppy<br>
+    Розмір, см: 2-3 <br>
+    Сумісність: мирні
+    <br> Кількість: багато</p>
+ <div class="product-buttons">
+    <button class="button card-button">1</button>
+    <button class="button card-button">Купити</button>215.00 грн.
+            </div>
+        </article>
+             <article class="fish">
+   <h4> Тернеція червона</h4>
+ <img src="image/red_ternece.jpg" alt="red_ternece" width="210" height="200"><br>
+<p>Латинь: Gymnocorymbus ternetzi GLOFISH<br>
+ Розмір, см: 2-3 <br>
+ Сумісність: мирні<br>
+  Кількість: багато</p>
+ <div class="product-buttons">
+    <button class="button card-button">1</button>
+    <button class="button card-button">Купити</button>45.00 грн.
+            </div>
+            </article>
+         <article class="fish">
+    <h4> Червона шапочка</h4>
+<img src="image/red_riding_hood.jpg" alt="red_riding_hood" width="210" height="200">
+ <p> Латинь: Tancho оranda<br>
+  Розмір, см: 5-6 <br>
+  Сумісність: мирні<br>
+   Кількість: мало</p>
+            <div class="product-buttons">
+    <button class="button card-button">1</button>
+    <button class="button card-button">Купити</button>235.00 грн.
+            </div>
+            </article>
+         <article class="fish">
+    <h4> Барбус суматранський зелений</h4>
+     <img src="image/sumatran_green_barb.jpg" alt="sumatran_green_barb" width="210" height="200">
+     <p>Латинь: Barbus tetrazona GLOFISH<br>
+      Розмір, см: 2-3<br>
+       Сумісність: мирні<br>
+        Кількість: багато</p>
+    <div class="product-buttons">
+    <button class="button card-button">1</button>
+    <button class="button card-button">Купити</button>23.00 грн.
+            </div>
+            </article>
+ <article class="fish">
+  <h4>Вуалехвіст червоний</h4>
+<img src="image/red_voilevist.jpg" alt="red_voilevist" width="210" height="200">
+   <p>Латинь: Carassius auratus<br>
+    Розмір, см: 2-3<br>
+     Сумісність: мирні<br>
+      Кількість: багато</p>
+                            <div class="product-buttons">
+    <button class="button card-button">1</button>
+    <button class="button card-button">Купити</button>53.00 грн.
+            </div>
+            </article>
+            <article class="fish">
+   <h4> Аулонокара Строуберрі</h4>
+ <img src="image/Aulonocara.jpg" alt="Aulonocara" width="210" height="200"><br>
+<p>Латинь: Aulonocara strawberry<br>
+ Розмір, см: 5-6<br>
+  Сумісність: агресивні<br>
+   Кількість: мало</p>
+ <div class="product-buttons">
+    <button class="button card-button">1</button>
+    <button class="button card-button">Купити</button>123.00 грн.
+            </div>
+            </article>
+             <article class="fish">
+   <h4> Рак мандарин</h4>
+ <img src="image/Cambarellus.jpg" alt="Cambarellus" width="210" height="200"><br>
+<p>Латинь: Procambarus milleri<br>
+ Розмір, см: 4-5<br>
+  Сумісність: мирні <br>
+  Кількість: мало</p>
+ <div class="product-buttons">
+    <button class="button card-button">1</button>
+    <button class="button card-button">Купити</button>45.00 грн.
+            </div>
+            </article>
+            </div>
+              </section>
+              <hr>
         </main>
         <footer>
             <section id="contacts">
