@@ -72,7 +72,7 @@ main #catalog h1{
     font-family: var(--font-family);
     text-transform: uppercase;
     display :flex;
-justify-content:space-between;
+    justify-content:space-between;
 }
 main #catalog .catagory{
     background-image: linear-gradient(to right top, #93bfd6, #52a5dc, #0087e1, #0064dd, #4336cb);
