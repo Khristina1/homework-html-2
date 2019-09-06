@@ -70,9 +70,9 @@ header .banner h1 a:hover{
 }
 main #catalog h1{
     font-family: var(--font-family);
-}
-main .basket{
-justify-content:flex-end;
+    text-transform: uppercase;
+    display :flex;
+justify-content:space-between;
 }
 main #catalog .catagory{
     background-image: linear-gradient(to right top, #93bfd6, #52a5dc, #0087e1, #0064dd, #4336cb);
@@ -94,6 +94,11 @@ main #catalog .catagories .fish{
 main #catalog .catagories .fish:hover{
     border: 1px solid #2274CE;
 }
+footer #contacts h1{
+    display: flex;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+}
 @media(min-width: 600px){
 header .nav{
     display: flex;
@@ -111,6 +116,12 @@ display:block;
 main .product .product-buttons{
     display: flex;
     justify-content: space-around;
+}
+main #catalog .catalogies{
+    justify-content: center;
+}
+footer #contacts h1{
+    justify-content: center;
 }
 }
 @media (min-width: 400px){
