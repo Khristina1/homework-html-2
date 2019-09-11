@@ -233,6 +233,9 @@ footer .data .button :active{
 position:relative;
 	top:1px;
 }
+header .clock{
+position: fixed;
+    }
 @media(min-width: 600px){
 header .nav{
     display: flex;
