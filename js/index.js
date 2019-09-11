@@ -10,3 +10,8 @@ document.querySelectorAll('.catagories .catagory').forEach(catagory => catagory.
 function catagoryPressed(ev){
     alert('Ви переходите до іншої категорії');
 }
+document.querySelectorAll('#contacts .contact').forEach(contact => contact.addEventListener('click', contactPressed));
+ function contactPressed(ev){
+     alert ('Зателефонуйте нам)');
+     }
+
