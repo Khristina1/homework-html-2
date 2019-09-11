@@ -2,8 +2,8 @@
 const clockElement = document.querySelector('.clock');
 setInterval( () => clockElement.innerText = (new Date ()).toLocaleTimeString(), 1000);
 
-document.querySelectorAll('.product-buttons .button').forEach(button => button.addEventListener('click', buttonPressed));
-function buttonPressed(ev){
+document.querySelectorAll('.product-buttons .buttonBuy').forEach(buttonBuy => buttonBuy.addEventListener('click', buttonBuyPressed));
+function buttonBuyPressed(ev){
     alert('Добавлено в корзину');
 }
 document.querySelectorAll('.catagories .catagory').forEach(catagory => catagory.addEventListener('click', catagoryPressed));

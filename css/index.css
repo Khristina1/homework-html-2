@@ -7,7 +7,7 @@
  scroll-behavior: smooth;
 }
 body{
-    max-width: 1300px;
+    max-width: 980px;
     margin:auto;
 }
 .text{
@@ -18,13 +18,14 @@ body{
     font-size:2rem;
 }
 header nav .search{
-    display: flex;
+display: flex;
   padding: 0;
  border: 1px solid transparent;
+ font-family: var(--font-family);
 
 }
 header nav .search:hover{
-       border: 0px solid #165BBD;
+       border: 1px solid #165BBD;
 }
 header nav .menu{
     display:flex;
@@ -94,7 +95,7 @@ main #catalog .catagories .fish{
 main #catalog .catagories .fish:hover{
     border: 1px solid #2274CE;
 }
-main .fish .button  {
+main .fish .buttonBuy  {
   	-moz-box-shadow: 3px 3px 0px 0px #327fc2;
 	-webkit-box-shadow: 3px 3px 0px 0px #327fc2;
 	box-shadow: 3px 3px 0px 0px #327fc2;
@@ -120,7 +121,7 @@ main .fish .button  {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d6e9e;
 }
-main .fish .button :hover{
+main .fish .buttonBuy :hover{
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2490fc), color-stop(1, #0d2a47));
 	background:-moz-linear-gradient(top, #2490fc 5%, #0d2a47 100%);
 	background:-webkit-linear-gradient(top, #2490fc 5%, #0d2a47 100%);
@@ -130,7 +131,7 @@ main .fish .button :hover{
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2490fc', endColorstr='#0d2a47',GradientType=0);
 	background-color:#2490fc;
 }
-main .fish .button :active{
+main .fish .buttonBuy :active{
 position:relative;
 	top:1px;
 }
@@ -156,7 +157,7 @@ main .fish .buttons  {
 	font-family:Arial;
 	font-size:13px;
 	font-weight:bold;
-	padding:7px 21px;
+	padding:7px 1px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d6e9e;
 }
@@ -192,6 +193,7 @@ flex-direction: column;
 footer .foot{
     background-image: linear-gradient(to right top, #93bfd6, #52a5dc, #0087e1, #0064dd, #4336cb);
 border: 1px solid #1A1D74;
+padding:12px;
 }
 footer .data .button  {
   	-moz-box-shadow: 3px 3px 0px 0px #327fc2;
@@ -235,6 +237,11 @@ position:relative;
 }
 header .clock{
 position: fixed;
+border: 1px solid transparent;
+padding:5px;
+    }
+    header .clock:hover{
+border: 1px solid var(--accent-color);
     }
 @media(min-width: 600px){
 header .nav{
