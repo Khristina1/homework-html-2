@@ -88,7 +88,9 @@
     <br>Кількість: багато
                         </p>
                         <div class="product-buttons">
-                            <button class="button card-button">1</button>
+                           <label>
+                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
+                        </label>
                             <button class="button card-button">Купити</button>
                             215.00 грн.
 
@@ -104,7 +106,9 @@
                             Сумісність: мирні<br>Кількість: багато
                         </p>
                         <div class="product-buttons">
-                            <button class="button card-button">1</button>
+                         <label>
+                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
+                        </label>
                             <button class="button card-button">Купити</button>
                             45.00 грн.
 
@@ -119,7 +123,9 @@
                             Сумісність: мирні<br>Кількість: мало
                         </p>
                         <div class="product-buttons">
-                            <button class="button card-button">1</button>
+                         <label>
+                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
+                        </label>
                             <button class="button card-button">Купити</button>
                             235.00 грн.
 
@@ -134,7 +140,9 @@
                             Сумісність: мирні<br>Кількість: багато
                         </p>
                         <div class="product-buttons">
-                            <button class="button card-button">1</button>
+                          <label>
+                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
+                        </label>
                             <button class="button card-button">Купити</button>
                             23.00 грн.
 
@@ -149,7 +157,9 @@
                             Сумісність: мирні<br>Кількість: багато
                         </p>
                         <div class="product-buttons">
-                            <button class="button card-button">1</button>
+                        <label>
+                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
+                        </label>
                             <button class="button card-button">Купити</button>
                             53.00 грн.
 
@@ -165,8 +175,10 @@
                             Сумісність: агресивні<br>Кількість: мало
                         </p>
                         <div class="product-buttons">
-                            <button class="button card-button">1</button>
-                            <button class="button card-button">Купити</button>
+                        <label>
+                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
+                        </label>
+                            <button class="button">Купити</button>
                             123.00 грн.
 
                         </div>
@@ -181,7 +193,9 @@
                             Сумісність: мирні <br>Кількість: мало
                         </p>
                         <div class="product-buttons">
-                            <button class="button card-button">1</button>
+                       <label>
+                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
+                        </label>
                             <button class="button card-button">Купити</button>
                             45.00 грн.
 
@@ -195,56 +209,45 @@
             <section id="contacts">
                 <h1>Контакти</h1>
                 <form action="https://formspree.io/sokeyush@gmail.com" method="POST">
-                    <table>
-                        <tr>
-                            <td>
+                  <p class="contact">
                                 Україна, Львів<br>
                                 +38 (098) 422-91-99<br>
                                 +38 (099) 049-95-45<br>
+                                 <a href="#"><img src="image/phone.png"  alt="phone" width="30" height="30"></a>
                                 Пн-Пт: з 9:00 до 18:00<br>
                                 Сб-Нд: вихідний<br>
                                 E-mail: info@fishstore.org.ua<br>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
                                 ДОСТАВКА РИБ ПО ВСІЙ УКРАЇНІ<br>
-                                <label>
-                                    Ім'я: <input type="text" name="name" placeholder="Введіть ваше ім'я">
+                  </p><p class="data">
+                                <label  >
+                                    Ім'я: <input type="text"  name="name" placeholder="Введіть ваше ім'я">
                                 </label>
-                                <br>
-                                <br>
                                 <label>
-                                    Телефон:* <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
+                                    Телефон:* <input type="tel"   name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
                                 </label>
-                                <br>
-                                <br>
                                 <label>
-                                    Електронна пошта: <input type="email" name="user-name" placeholder="Email" multiple>
+                                    Електронна пошта: <input type="email"  name="user-name" placeholder="Email" multiple>
                                 </label>
-                                <br>
-                                <br>
                                 <label>
-                                    Повідомлення:* <input type="text" name="text-area" placeholder="Введіть ваше повідомлення" size="35" required>
+                                    Повідомлення:* <input type="text"  name="text-area" placeholder="Введіть ваше повідомлення" size="35" required>
                                 </label>
-                                <br>
                                 <label>
-                                    <input type="submit" value="Надіслати">
+                                    <input type="submit" class="button" value="Надіслати"> <a href="submit"><img src="image/message.png" alt="message" height="50" width="50"></a>
                                 </label>
-                            </td>
-                        </tr>
-                    </table>
+                  </p>
                 </form>
             </section>
-            <a href="#">
+                    <div class="clock"></div>
+    <div class='infoBlock'></div>
+            <p class="foot">
+            <a  href="#">
                 <img src="image/instagram.jpg" alt="instagram" width="30" height="30">
             </a>
             <a href="#">
                 <img src="image/facebook.png" alt="facebook" width="30" height="30">
             </a>
+            </p>
         </footer>
+       <script src="js/index.js"></script>
     </body>
 </html>
