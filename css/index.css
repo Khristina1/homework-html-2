@@ -99,11 +99,11 @@ main #catalog .catagory li a{
 }
 main #catalog .catagories .fish{
     font-family: var(--font-family);
-    border: 1px solid transparent;
+    border: 2px solid transparent;
 }
 main #catalog .catagories .fish:hover{
-    border: 3px solid #2274CE;
-}
+    border: 2px solid #2274CE;
+   }
 main .fish .buttonBuy  {
   	-moz-box-shadow: 3px 3px 0px 0px #327fc2;
 	-webkit-box-shadow: 3px 3px 0px 0px #327fc2;
@@ -206,7 +206,7 @@ footer #contacts .data:hover{
 footer .foot{
 background-image: linear-gradient(to right top, #93bfd6, #52a5dc, #0087e1, #0064dd, #4336cb);
 border: 1px solid #1A1D74;
-padding:12px;
+padding:15px;
 }
 footer .data .button  {
   	-moz-box-shadow: 3px 3px 0px 0px #327fc2;
@@ -250,7 +250,7 @@ position:relative;
 }
 footer #contacts .datas{
 display: flex;
- border: 1px solid transparent;
+ border: 2px solid transparent;
  font-family: var(--font-family);
 
 }
