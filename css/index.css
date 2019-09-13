@@ -198,7 +198,7 @@ footer #contacts .data{
 display: flex;
 font-family: var(--font-family);
 flex-direction: column;
-border: 1px solid transparent;
+border: 2px solid transparent;
 }
 footer #contacts .data:hover{
     border: 2px solid #2274CE;
@@ -250,7 +250,7 @@ position:relative;
 }
 footer #contacts .datas{
 display: flex;
- border: 2px solid transparent;
+ border: 3px solid transparent;
  font-family: var(--font-family);
 
 }
