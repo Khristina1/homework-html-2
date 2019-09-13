@@ -21,6 +21,8 @@ header .clock{
 position: fixed;
 border: 1px solid transparent;
 padding:5px;
+right:0;
+top:0;
     }
     header .clock:hover{
 border: 1px solid var(--accent-color);
@@ -250,7 +252,7 @@ position:relative;
 }
 footer #contacts .datas{
 display: flex;
- border: 3px solid transparent;
+ border: 1px solid transparent;
  font-family: var(--font-family);
 
 }
