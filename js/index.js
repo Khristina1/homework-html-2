@@ -24,3 +24,4 @@ document.querySelectorAll('#contacts .contact').forEach(contact => contact.addEv
  function contactPressed(ev){
      alert ('Зателефонуйте нам)');
      };
+
