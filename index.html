@@ -9,6 +9,7 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="icon" type="image.png" href="image/favicon.ico">
+         <script type = "js/index.js" src = " linkedselect.js "> </script>
     </head>
     <body>
         <header>
@@ -48,31 +49,31 @@
                     <ul class="catagory">
                         <h2>Категорії:</h2>
                         <li>
-                            <a href="#">Сяючі рибки</a>
+                            <a href="index.html">Рекомендовані</a>
                         </li>
                         <li>
-                            <a href="#">Золоті рибки</a>
+                            <a href="karp.html">Карпи</a>
                         </li>
                         <li>
-                            <a href="#">Карпи</a>
+                            <a href="haratsunovi.html">Харацинові</a>
                         </li>
                         <li>
-                            <a href="#">Соми</a>
+                            <a href="som.html">Соми</a>
                         </li>
                         <li>
                             <a href="#">Скалярії</a>
                         </li>
                         <li>
-                            <a href="#">Ексклюзивні</a>
+                            <a href="#">Живородячі</a>
                         </li>
                         <li>
-                            <a href="#">Равлики</a>
+                            <a href="#">Рептилії</a>
                         </li>
                         <li>
                             <a href="#">Креветки</a>
                         </li>
                         <li>
-                            <a href="#">Жаби</a>
+                            <a href="#">Золоті рибки</a>
                         </li>
                         <li>
                             <a href="#">Черепахи</a>
@@ -81,10 +82,89 @@
                             <a href="#">Чистильники</a>
                         </li>
                     </ul>
-                    
                     <article class="fish">
-                        <h3>Бичок лицар</h3>
-                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> <img src="image/steer_knight.jpg" alt="Бичок лицар" width="210" height="200"></button>
+                 <h3>Неон голубий - Parach. innesi</h3>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+ <img src="image/neon-blue.jpg" alt="Бичок лицар" width="210" height="250">
+</button>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Відео огляд</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <video  autoplay muted loop poster="video/fish.jpg" id="myVideo">
+<source src="video/3.mp4" type="video/mp4">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+      </div>
+    </div>
+  </div>
+</div>                  
+                        <p> 
+       
+                           
+                            Розмір, см: 2-3 <br>
+                            Сумісність: мирні
+                          <br>Кількість: багато
+                        </p>
+   <div class="product-buttons">
+   <select id='number-select' class="buttons"></select>
+   <select id='price-select' class="buttons"></select>
+ <button id="button" class="buttonBuy">Купити</button>
+ </div>
+ </article>
+
+<article class="fish">
+                 <h3>Неон червоний - Parach. axelrodi</h3>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+ <img src="image/neon-red.jpg" alt="Бичок лицар" width="210" height="250">
+</button>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Відео огляд</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <video  autoplay muted loop poster="video/fish.jpg" id="myVideo">
+<source src="video/3.mp4" type="video/mp4">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+      </div>
+    </div>
+  </div>
+</div>
+                          <p> 
+       
+                            
+                            Розмір, см: 2-3 <br>
+                            Сумісність: мирні
+                          <br>Кількість: багато
+                        </p>
+                        <div class="product-buttons">
+<select id='number-selects' class="buttons"></select>
+<select id='price-selects' class="buttons"></select>
+   <button id="button" class="buttonBuy">Купити</button>
+  </div>
+ </article>
+              
+   <article class="fish">
+                        <h3>Тернеція червона - Glo-fish</h3>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> <img src="image/ternetion.jpg" alt="Тернеція червона" width="210" height="200"></button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -95,34 +175,16 @@
         </button>
       </div>
       <div class="modal-body">
-        <video  autoplay muted loop poster="video/fish.jpg" id="myVideo">
-<source src="video/1.mp4" type="video/mp4">
+     <video  autoplay muted loop poster="video/fish.jpg" id="myVideo">
+<source src="video/ternetion.mp4" type="video/mp4">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
              </div>
     </div>
   </div>
-</div>                      
-                        <p> 
-       
-                            Латинь: Guppy<br>
-                            Розмір, см: 2-3 <br>
-                            Сумісність: мирні
-                          <br>Кількість: багато
-                        </p>
-                        <div class="product-buttons">
-                           <label>
-                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
-                        </label>
-                            <button id="button" class="buttonBuy">Купити</button>
-                            215.00 грн.
-
-                        </div>
-                    </article>
-                    <article class="fish">
-                        <h3>Тернеція червона</h3>
-                        <img src="image/red_ternece.jpg" alt="Тернеція червона" width="210" height="200">
+</div>        
+                       
                         <br>
                         <p>
                             Латинь: Gymnocorymbus ternetzi GLOFISH<br>
@@ -130,15 +192,13 @@
                             Сумісність: мирні<br>Кількість: багато
                         </p>
                         <div class="product-buttons">
-                         <label>
-                            <input type="number" class="buttons" name="num" min="1" max="10" placeholder="1">
-                        </label>
-                            <button id="button_a"  class="buttonBuy">Купити</button>
-                            45.00 грн.
 
-                        </div>
+ <button id="button_a"  class="buttonBuy">Купити</button>
+ </div>
                     </article>
+                
                     <article class="fish">
+                    
                         <h3>Червона шапочка</h3>
                         <img src="image/red_riding_hood.jpg" alt="Червона шапочка" width="210" height="200">
                         <p>

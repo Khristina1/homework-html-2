@@ -193,6 +193,14 @@ main .fish .buttons :hover{
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2490fc', endColorstr='#0d2a47',GradientType=0);
 	background-color:#2490fc;
 }
+.fish .btn-primary {
+    background-color: white;
+    border-color:white;
+}
+.fish .btn-primary:hover{
+    border: 1px solid var(--accent-color);
+    border-radius:10px;
+}
 main .fish .buttons :active{
 position:relative;
 	top:1px;
